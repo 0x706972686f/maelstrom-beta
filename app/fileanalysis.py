@@ -19,6 +19,7 @@ import math
 import clamd
 import yara
 import ntpath
+import ssdeep
 
 MINIMUMSTRINGLENGTH=8
 ZIPPASSWORD='infected'
@@ -60,6 +61,7 @@ class fileAnalysis(object):
                 self.fileextension = self.set_fileextension()
                 self.sha256hash = self.set_sha256hash()
                 self.md5hash = self.set_md5hash()
+                self.ssdeephash = self.set_ssdeephash()
 
         """
         Set Functions
@@ -80,6 +82,9 @@ class fileAnalysis(object):
 
         def set_md5hash(self):
                 return hashlib.md5(open(self.filepath,'rb').read()).hexdigest()
+
+        def set_ssdeephash(self):
+                return ssdeep.hash_from_file(self.filepath)
 
         """
         Static Methods
@@ -265,6 +270,12 @@ Functions:
 class exeAnalysis(fileAnalysis):
         def __init__(self,filepath):
                 fileAnalysis.__init__(self,filepath)
+                self.imphash = self.set_imphash()
+
+        def set_imphash(self):
+                pe = pefile.PE(self.filepath)
+                return pe.imphash()
+
 
         def get_filehexdump(self):
                 with open(self.filepath, 'rb') as f:

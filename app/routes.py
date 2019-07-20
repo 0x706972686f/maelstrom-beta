@@ -237,15 +237,13 @@ def browse_site(url,url_uuid,mobile=False):
             screenshot_path = url_uuid + '_d.png'
 
 
-        print('it gets here')
         hc = headlesschrome(url, mobile)
         hc.get_page()
         pageurl = hc.get_currenturl()
-        print(pageurl)
         pagetitle = hc.get_pagetitle()
         useragent = hc.get_useragent()
         # Known Bug in v73 of Chrome and Headless Chrome - can't take screenshots :(
-        #hc.get_pagescreenshot()
+        hc.get_pagescreenshot()
         hc.set_closesession()
 
         result_dict['title'] = pagetitle
@@ -295,6 +293,55 @@ def website_analysis(url,urluuid):
                 res.close()
 
 
+"""
+Celery
+"""
+@celery.task(bind=True)
+def long_task(self):
+        verb = ['Starting Up', 'Booting', 'Repairing', 'Loading', 'Checking']
+        adjective = ['master', 'radiant', 'silent', 'harmonic', 'fast']
+        noun = ['solar array', 'particle reshaper', 'cosmic ray', 'orbiter', 'bit']
+        message = ''
+        total = random.randint(10,50)
+        for i in range(total):
+                if not message or random.random() < 0.25:
+                        message = '{0} {1} {2}...'.format(random.choice(verb), random.choice(adjective), random.choice(noun))
+                self.update_state(state='PROGRESS', meta={'current': i, 'total': total, 'status': message})
+                time.sleep(1)
+        return {'current': 100, 'total': 100, 'status': 'Task Completed', 'result': 42}
+
+@app.route('/longtask', methods=['POST'])
+def longtask():
+        task = long_task.apply_async()
+        return jsonify({}), 202, {'Location': url_for('taskstatus', task_id=task.id)}
+
+@app.route('/status/<task_id>')
+        task = long_task.AsyncResult(task_id)
+        if task.state == 'PENDING':
+                #job did not start yet
+                response = {
+                        'state': task.state,
+                        'current': 0,
+                        'total': 1,
+                        'status': 'Pending...'
+                }
+        elif task.state != 'FAILURE':
+                response = {
+                        'state': task.state,
+                        'current': task.info.get('current', 0),
+                        'total': task.info.get('total', 1),
+                        'status': task.info.get('status', '')
+                }
+                if 'result' in task.info:
+                        response['result'] = task.info['result']
+        else:
+                response = {
+                        'state': task.state,
+                        'current': 1,
+                        'total': 1,
+                        'status': str(task.info),
+                }
+        return jsonify(response)
 """
 Function: uploader
 Description:
