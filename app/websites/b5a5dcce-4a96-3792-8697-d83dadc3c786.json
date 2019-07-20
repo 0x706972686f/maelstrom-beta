@@ -1,0 +1,112 @@
+{
+    "url": "http://yahoo.com",
+    "ipaddress": "98.137.246.7",
+    "uuid": "b5a5dcce-4a96-3792-8697-d83dadc3c786",
+    "date": "2019-04-28 07:23:42",
+    "domain_whois": {
+        "id": [
+            "3643624_DOMAIN_COM-VRSN"
+        ],
+        "status": [
+            "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+            "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+            "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+            "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+            "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+            "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited"
+        ],
+        "creation_date": [
+            "1995-01-18 05:00:00"
+        ],
+        "expiration_date": [
+            "2023-01-19 05:00:00"
+        ],
+        "updated_date": [
+            "2018-02-02 01:07:18"
+        ],
+        "registrar": [
+            "MarkMonitor Inc."
+        ],
+        "whois_server": [
+            "whois.markmonitor.com"
+        ],
+        "nameservers": [
+            "NS1.YAHOO.COM",
+            "NS2.YAHOO.COM",
+            "NS3.YAHOO.COM",
+            "NS4.YAHOO.COM",
+            "NS5.YAHOO.COM"
+        ],
+        "emails": [
+            "abusecomplaints@markmonitor.com"
+        ],
+        "contacts": {
+            "registrant": null,
+            "tech": null,
+            "admin": null,
+            "billing": null
+        },
+        "raw": [
+            "   Domain Name: YAHOO.COM\n   Registry Domain ID: 3643624_DOMAIN_COM-VRSN\n   Registrar WHOIS Server: whois.markmonitor.com\n   Registrar URL: http://www.markmonitor.com\n   Updated Date: 2018-02-02T01:07:18Z\n   Creation Date: 1995-01-18T05:00:00Z\n   Registry Expiry Date: 2023-01-19T05:00:00Z\n   Registrar: MarkMonitor Inc.\n   Registrar IANA ID: 292\n   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com\n   Registrar Abuse Contact Phone: +1.2083895740\n   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\n   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\n   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\n   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\n   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\n   Name Server: NS1.YAHOO.COM\n   Name Server: NS2.YAHOO.COM\n   Name Server: NS3.YAHOO.COM\n   Name Server: NS4.YAHOO.COM\n   Name Server: NS5.YAHOO.COM\n   DNSSEC: unsigned\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\n>>> Last update of whois database: 2019-04-28T07:23:40Z <<<\n\nFor more information on Whois status codes, please visit https://icann.org/epp\n\nNOTICE: The expiration date displayed in this record is the date the\nregistrar's sponsorship of the domain name registration in the registry is\ncurrently set to expire. This date does not necessarily reflect the expiration\ndate of the domain name registrant's agreement with the sponsoring\nregistrar.  Users may consult the sponsoring registrar's Whois database to\nview the registrar's reported date of expiration for this registration.\n\nTERMS OF USE: You are not authorized to access or query our Whois\ndatabase through the use of electronic processes that are high-volume and\nautomated except as reasonably necessary to register domain names or\nmodify existing registrations; the Data in VeriSign Global Registry\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\ninformation purposes only, and to assist persons in obtaining information\nabout or related to a domain name registration record. VeriSign does not\nguarantee its accuracy. By submitting a Whois query, you agree to abide\nby the following terms of use: You agree that you may use this Data only\nfor lawful purposes and that under no circumstances will you use this Data\nto: (1) allow, enable, or otherwise support the transmission of mass\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\nor facsimile; or (2) enable high volume, automated, electronic processes\nthat apply to VeriSign (or its computer systems). The compilation,\nrepackaging, dissemination or other use of this Data is expressly\nprohibited without the prior written consent of VeriSign. You agree not to\nuse electronic processes that are automated and high-volume to access or\nquery the Whois database except as reasonably necessary to register\ndomain names or modify existing registrations. VeriSign reserves the right\nto restrict your access to the Whois database in its sole discretion to ensure\noperational stability.  VeriSign may restrict or terminate your access to the\nWhois database for failure to abide by these terms of use. VeriSign\nreserves the right to modify these terms at any time.\n\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\nRegistrars.\n"
+        ]
+    },
+    "ip_whois": {
+        "emails": [
+            "rir-noc@oath.com",
+            "rir-abuse@oath.com",
+            "rir-tech@oath.com",
+            "rir-admin@oath.com",
+            "network-abuse@cc.yahoo-inc.com"
+        ],
+        "contacts": {
+            "registrant": null,
+            "tech": null,
+            "admin": null,
+            "billing": null
+        },
+        "raw": [
+            "\n#\n# ARIN WHOIS data and services are subject to the Terms of Use\n# available at: https://www.arin.net/resources/registry/whois/tou/\n#\n# If you see inaccuracies in the results, please report at\n# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/\n#\n# Copyright 1997-2019, American Registry for Internet Numbers, Ltd.\n#\n\n\n#\n# Query terms are ambiguous.  The query is assumed to be:\n#     \"n 98.137.246.7\"\n#\n# Use \"?\" to get help.\n#\n\nNetRange:       98.136.0.0 - 98.139.255.255\nCIDR:           98.136.0.0/14\nNetName:        A-YAHOO-US9\nNetHandle:      NET-98-136-0-0-1\nParent:         NET98 (NET-98-0-0-0-0)\nNetType:        Direct Allocation\nOriginAS:       \nOrganization:   Yahoo! Inc. (YHOO)\nRegDate:        2007-12-07\nUpdated:        2012-03-02\nRef:            https://rdap.arin.net/registry/ip/98.136.0.0\n\n\nOrgName:        Yahoo! Inc.\nOrgId:          YHOO\nAddress:        701 First Ave\nCity:           Sunnyvale\nStateProv:      CA\nPostalCode:     94089\nCountry:        US\nRegDate:        2000-10-23\nUpdated:        2019-02-11\nRef:            https://rdap.arin.net/registry/entity/YHOO\n\n\nOrgNOCHandle: OATHN-ARIN\nOrgNOCName:   Oath NOC\nOrgNOCPhone:  +1-408-349-5555 \nOrgNOCEmail:  rir-noc@oath.com\nOrgNOCRef:    https://rdap.arin.net/registry/entity/OATHN-ARIN\n\nOrgAbuseHandle: OATHA-ARIN\nOrgAbuseName:   Oath Abuse\nOrgAbusePhone:  +1-408-349-3300 \nOrgAbuseEmail:  rir-abuse@oath.com\nOrgAbuseRef:    https://rdap.arin.net/registry/entity/OATHA-ARIN\n\nOrgTechHandle: OTC2-ARIN\nOrgTechName:   Oath Tech Contact\nOrgTechPhone:  +1-408-349-5555 \nOrgTechEmail:  rir-tech@oath.com\nOrgTechRef:    https://rdap.arin.net/registry/entity/OTC2-ARIN\n\nRTechHandle: NA258-ARIN\nRTechName:   Netblock Admin\nRTechPhone:  +1-408-349-3300 \nRTechEmail:  rir-admin@oath.com\nRTechRef:    https://rdap.arin.net/registry/entity/NA258-ARIN\n\nRAbuseHandle: NETWO857-ARIN\nRAbuseName:   Network Abuse\nRAbusePhone:  +1-408-349-3300 \nRAbuseEmail:  network-abuse@cc.yahoo-inc.com\nRAbuseRef:    https://rdap.arin.net/registry/entity/NETWO857-ARIN\n\n\n#\n# ARIN WHOIS data and services are subject to the Terms of Use\n# available at: https://www.arin.net/resources/registry/whois/tou/\n#\n# If you see inaccuracies in the results, please report at\n# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/\n#\n# Copyright 1997-2019, American Registry for Internet Numbers, Ltd.\n#\n\n"
+        ]
+    },
+    "http_headers": {
+        "Content-Type": "text/html; charset=UTF-8",
+        "Date": "Sun, 28 Apr 2019 07:22:43 GMT",
+        "x-amz-server-side-encryption": "AES256",
+        "Cache-Control": "no-store, no-cache, max-age=0, private",
+        "Content-Encoding": "gzip",
+        "Server": "ATS",
+        "Age": "68",
+        "X-Cache": "Hit from cloudfront",
+        "X-Amz-Cf-Id": "UKFCl1yCUFS2Qq6ymqEr22IHFfStqNhbWynpil6h7_3_vWbS5B9qBA==",
+        "Content-Length": "235084",
+        "P3P": "policyref=\"http://info.yahoo.com/w3c/p3p.xml, CP=\"CAO DSP COR CUR ADM DEV TAI PSA PSD IVAi IVDi CONi TELo OTPi OUR DELi SAMi OTRi UNRi PUBi IND PHY ONL UNI PUR FIN COM NAV INT DEM CNT STA POL HEA PRE LOC GOV",
+        "Expires": "-1",
+        "Connection": "close",
+        "Strict-Transport-Security": "max-age=31536000",
+        "Content-Security-Policy-Report-Only": "style-src https://*.btrll.com https://*.oath.com https://*.yimg.com https://*.yahoo.com 'self' 'unsafe-inline' data: blob:; script-src https://*.btrll.com https://*.oath.com https://*.yahoo.com https://*.yimg.com 'self' 'unsafe-inline' 'unsafe-eval' https://platform.twitter.com https://*.btrll.com data: blob:; frame-ancestors https://*.techcrunch.com https://*.huffingtonpost.com https://*.aol.com https://*.yahoo.com; sandbox allow-forms allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-presentation; report-uri https://csp.yahoo.com/beacon/csp?src=ats&site=frontpage&region=US&lang=en-US&device=&yrid=dou6r8decal86&partner=;",
+        "Content-Security-Policy": "sandbox allow-forms allow-same-origin allow-scripts allow-popups allow-popups-to-escape-sandbox allow-presentation; report-uri https://csp.yahoo.com/beacon/csp?src=ats&site=frontpage&region=US&lang=en-US&device=&yrid=dou6r8decal86&partner=;",
+        "X-Frame-Options": "SAMEORIGIN",
+        "X-XSS-Protection": "1; report=\"https://csp.yahoo.com/beacon/csp?src=fp-hpkp-www\"",
+        "Expect-CT": "max-age=31536000, report-uri=\"http://csp.yahoo.com/beacon/csp?src=yahoocom-expect-ct-report-only\""
+    },
+    "desktop": {
+        "title": "Yahoo",
+        "finalurl": "https://au.yahoo.com/?p=us",
+        "useragent": "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36",
+        "screenshot": "b5a5dcce-4a96-3792-8697-d83dadc3c786_d.png"
+    },
+    "mobile": {
+        "title": "Yahoo",
+        "finalurl": "https://au.yahoo.com/?p=us",
+        "useragent": "user-agent=Mozilla/5.0 (Linux; Android 8.0.0; SM-G965F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36",
+        "screenshot": "b5a5dcce-4a96-3792-8697-d83dadc3c786_m.png"
+    },
+    "sslcertificate": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "Sunnyvale",
+        "organizationName": "DigiCert Inc",
+        "commonName": "DigiCert SHA2 High Assurance Server CA",
+        "organizationalUnitName": "www.digicert.com"
+    }
+}

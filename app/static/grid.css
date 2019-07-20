@@ -1,0 +1,36 @@
+body {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+h3 {
+  margin-top: 2rem;
+}
+
+.row {
+  margin-bottom: 0rem;
+}
+.top {
+	border: 1px solid #c0392b;
+	color: #ffffff;
+	background-color: #e74c3c;
+	
+}
+.row .row {
+  margin-top: 0rem;
+  margin-bottom: 0;
+}
+
+.content {
+  background-color: #ecf0f1;
+  border: 1px solid #bdc3c7;
+}
+[class*="col-"] {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+hr {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}

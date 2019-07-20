@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='grid.css') }}" rel="stylesheet">
+
+    <title>Malware Samples</title>
+	
+  </head>
+
+  <body>
+    <div class="container">
+      <p class="lead">Consider all samples below to be malicious, the files are provided as a password protected zip with the password: <i>infected</i>.</p>
+	  <p class="text-center"><a href="/">Home</a></p>
+
+      <div class="row top">
+        <div class="col-2 text-center">Date</div>
+        <div class="col-3 text-center">File</div>
+        <div class="col-5 text-center">MD5 Sum</div>
+        <div class="col-2 text-center">File Size (Bytes)</div>
+      </div>
+
+	  {% for sample in samples %}
+      <div class="row">			
+        <div class="col-2 content">{{ sample.date }}</div>
+	<div class="col-3 content">
+		<a href="/analysis/{{ sample.md5sum }}">{{ sample.filename }}</a>
+	</div>
+        <div class="col-5 content">
+		{{ sample.md5sum }} <br />
+		<a href="https://www.virustotal.com/#/file/{{ sample.md5sum }}/detection" target="_blank">VirusTotal</a> | 
+		<a href="/fileanalysis/{{ sample.md5sum }}">Analysis</a> |
+		<a href="{{ sample.path }}" download="{{ sample.zipfile }}">Download</a>
+	</div>
+        <div class="col-2 content">{{ sample.filesize }}</div>
+      </div>
+      	  {% endfor %}
+    </div> 
+  </body>
+</html>

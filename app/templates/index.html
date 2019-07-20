@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="{{ url_for('static', filename='bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='card.css') }}" rel="stylesheet">
+
+    <title>Malicious Investigator</title>
+	
+  </head>
+  <body>
+	<div class="title-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+		<h1 class="display-4">Malicious Investigator</h1>
+		<p class="lead">This site will let you quickly analyse files and websites, providing an assessment to determine if the content is malicious.</p>
+	</div>
+	<div class="container">
+		<div class="card-deck mb-3 text-center">
+			<div class="card mb-4 box-shadow">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Files</h4>
+				</div>
+				<div class="card-body">
+					<form class="form-signin" action="/uploader" method="post" enctype="multipart/form-data">
+						<div class="custom-file input-group mb-3">
+							<input type="file" class="custom-file-input" id="file" name="file">
+							<label class="custom-file-label" for="file">Choose File</label>
+						</div><br />
+						<button class="btn btn-lg btn-danger btn-block" name="button" value="upload" type="submit">Upload</button>
+					</form>
+					<a href="samples" class="text-primary">View Uploaded Files</a>
+				</div>
+			</div>
+			<div class="card mb-4 box-shadow">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">Websites</h4>
+				</div>
+				<div class="card-body">
+					<form class="form-sign" action="/uploader" method="post">
+						<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="inputGroupPrepend">http://</span>
+							</div>
+							<input type="text" class="form-control" id="url" name="url" placeholder="website.com/path/to/index.html">
+						</div>
+						<button class="btn btn-lg btn-danger btn-block" name="button" value="scan" type="submit">Scan</button>
+					</form>
+				</div>
+			</div>
+			<div class="card mb-4 box-shadow">
+				<div class="card-header">
+					<h4 class="my-0 font-weight-normal">IP Addresses</h4>
+				</div>
+				<div class="card-body">
+					<form class="form-sign" action="/uploader" method="post">
+						<div class="input-group mb-3">
+							<input type="text" class="form-control" id="url" name="url" placeholder="123.123.123.123" readonly>
+						</div>
+						<button class="btn btn-lg btn-danger btn-block" name="button" value="scan" type="submit" disabled>Scan</button>
+					</form>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+
+      {% if error %}
+      <div class="mb-3 text-center">
+        <p class="text-danger">{{ error }}</p>
+      </div>
+      {% endif %}
+	  
+	  
+      <p class="mt-5 mb-3 text-muted text-center">&copy; 2019</p>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script>
+	            $('#file').on('change',function(){
+                //get the file name
+                var fileName = $(this).val().replace(/C:\\fakepath\\/i, '');
+                //replace the "Choose a file" label
+                $(this).next('.custom-file-label').html(fileName);
+            })
+	</script>
+  </body>
+</html>

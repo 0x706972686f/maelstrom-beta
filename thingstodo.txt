@@ -1,0 +1,24 @@
+Get the HTTP STATUS Code (200, 301 redirect https://)
+Get the SSL cert information, and display it
+Implement the other static file analysis (yara, clamav, etc)
+Implement Basic API
+
+Next Phase:
+
+Implement UnitTests
+
+btn.OnClick() - jQuery show loader spinner
+
+
+Implement Proper Error Handling, including displaying pages:
+@app.route('/url')
+def function():
+	try:
+		function2()
+	except Exception as e:
+		render_template("500.html", error=str(e))
+
+import uuid
+uuid.uuid3(uuid.NAMESPACE_DNS, 'test.com/fake/index.htm')
+
+

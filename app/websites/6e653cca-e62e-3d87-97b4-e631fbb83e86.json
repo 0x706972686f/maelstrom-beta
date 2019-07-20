@@ -1,0 +1,102 @@
+{
+    "url": "http://google.com",
+    "ipaddress": null,
+    "uuid": "6e653cca-e62e-3d87-97b4-e631fbb83e86",
+    "date": "2019-04-30 12:34:12",
+    "domain_whois": {
+        "id": [
+            "2138514_DOMAIN_COM-VRSN"
+        ],
+        "status": [
+            "clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited",
+            "clientTransferProhibited https://icann.org/epp#clientTransferProhibited",
+            "clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited",
+            "serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited",
+            "serverTransferProhibited https://icann.org/epp#serverTransferProhibited",
+            "serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited"
+        ],
+        "creation_date": [
+            "1997-09-15 04:00:00"
+        ],
+        "expiration_date": [
+            "2020-09-14 04:00:00"
+        ],
+        "updated_date": [
+            "2018-02-21 18:36:40"
+        ],
+        "registrar": [
+            "MarkMonitor Inc."
+        ],
+        "whois_server": [
+            "whois.markmonitor.com"
+        ],
+        "nameservers": [
+            "NS1.GOOGLE.COM",
+            "NS2.GOOGLE.COM",
+            "NS3.GOOGLE.COM",
+            "NS4.GOOGLE.COM"
+        ],
+        "emails": [
+            "abusecomplaints@markmonitor.com"
+        ],
+        "contacts": {
+            "registrant": null,
+            "tech": null,
+            "admin": null,
+            "billing": null
+        },
+        "raw": [
+            "   Domain Name: GOOGLE.COM\n   Registry Domain ID: 2138514_DOMAIN_COM-VRSN\n   Registrar WHOIS Server: whois.markmonitor.com\n   Registrar URL: http://www.markmonitor.com\n   Updated Date: 2018-02-21T18:36:40Z\n   Creation Date: 1997-09-15T04:00:00Z\n   Registry Expiry Date: 2020-09-14T04:00:00Z\n   Registrar: MarkMonitor Inc.\n   Registrar IANA ID: 292\n   Registrar Abuse Contact Email: abusecomplaints@markmonitor.com\n   Registrar Abuse Contact Phone: +1.2083895740\n   Domain Status: clientDeleteProhibited https://icann.org/epp#clientDeleteProhibited\n   Domain Status: clientTransferProhibited https://icann.org/epp#clientTransferProhibited\n   Domain Status: clientUpdateProhibited https://icann.org/epp#clientUpdateProhibited\n   Domain Status: serverDeleteProhibited https://icann.org/epp#serverDeleteProhibited\n   Domain Status: serverTransferProhibited https://icann.org/epp#serverTransferProhibited\n   Domain Status: serverUpdateProhibited https://icann.org/epp#serverUpdateProhibited\n   Name Server: NS1.GOOGLE.COM\n   Name Server: NS2.GOOGLE.COM\n   Name Server: NS3.GOOGLE.COM\n   Name Server: NS4.GOOGLE.COM\n   DNSSEC: unsigned\n   URL of the ICANN Whois Inaccuracy Complaint Form: https://www.icann.org/wicf/\n>>> Last update of whois database: 2019-04-30T12:34:08Z <<<\n\nFor more information on Whois status codes, please visit https://icann.org/epp\n\nNOTICE: The expiration date displayed in this record is the date the\nregistrar's sponsorship of the domain name registration in the registry is\ncurrently set to expire. This date does not necessarily reflect the expiration\ndate of the domain name registrant's agreement with the sponsoring\nregistrar.  Users may consult the sponsoring registrar's Whois database to\nview the registrar's reported date of expiration for this registration.\n\nTERMS OF USE: You are not authorized to access or query our Whois\ndatabase through the use of electronic processes that are high-volume and\nautomated except as reasonably necessary to register domain names or\nmodify existing registrations; the Data in VeriSign Global Registry\nServices' (\"VeriSign\") Whois database is provided by VeriSign for\ninformation purposes only, and to assist persons in obtaining information\nabout or related to a domain name registration record. VeriSign does not\nguarantee its accuracy. By submitting a Whois query, you agree to abide\nby the following terms of use: You agree that you may use this Data only\nfor lawful purposes and that under no circumstances will you use this Data\nto: (1) allow, enable, or otherwise support the transmission of mass\nunsolicited, commercial advertising or solicitations via e-mail, telephone,\nor facsimile; or (2) enable high volume, automated, electronic processes\nthat apply to VeriSign (or its computer systems). The compilation,\nrepackaging, dissemination or other use of this Data is expressly\nprohibited without the prior written consent of VeriSign. You agree not to\nuse electronic processes that are automated and high-volume to access or\nquery the Whois database except as reasonably necessary to register\ndomain names or modify existing registrations. VeriSign reserves the right\nto restrict your access to the Whois database in its sole discretion to ensure\noperational stability.  VeriSign may restrict or terminate your access to the\nWhois database for failure to abide by these terms of use. VeriSign\nreserves the right to modify these terms at any time.\n\nThe Registry database contains ONLY .COM, .NET, .EDU domains and\nRegistrars.\n"
+        ]
+    },
+    "ip_whois": {
+        "emails": [
+            "network-abuse@google.com",
+            "arin-contact@google.com"
+        ],
+        "contacts": {
+            "registrant": null,
+            "tech": null,
+            "admin": null,
+            "billing": null
+        },
+        "raw": [
+            "\n#\n# ARIN WHOIS data and services are subject to the Terms of Use\n# available at: https://www.arin.net/resources/registry/whois/tou/\n#\n# If you see inaccuracies in the results, please report at\n# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/\n#\n# Copyright 1997-2019, American Registry for Internet Numbers, Ltd.\n#\n\n\n#\n# Query terms are ambiguous.  The query is assumed to be:\n#     \"n 172.217.25.46\"\n#\n# Use \"?\" to get help.\n#\n\nNetRange:       172.217.0.0 - 172.217.255.255\nCIDR:           172.217.0.0/16\nNetName:        GOOGLE\nNetHandle:      NET-172-217-0-0-1\nParent:         NET172 (NET-172-0-0-0-0)\nNetType:        Direct Allocation\nOriginAS:       AS15169\nOrganization:   Google LLC (GOGL)\nRegDate:        2012-04-16\nUpdated:        2012-04-16\nRef:            https://rdap.arin.net/registry/ip/172.217.0.0\n\n\n\nOrgName:        Google LLC\nOrgId:          GOGL\nAddress:        1600 Amphitheatre Parkway\nCity:           Mountain View\nStateProv:      CA\nPostalCode:     94043\nCountry:        US\nRegDate:        2000-03-30\nUpdated:        2018-10-24\nComment:        Please note that the recommended way to file abuse complaints are located in the following links. \nComment:        \nComment:        To report abuse and illegal activity: https://www.google.com/contact/\nComment:        \nComment:        For legal requests: http://support.google.com/legal \nComment:        \nComment:        Regards, \nComment:        The Google Team\nRef:            https://rdap.arin.net/registry/entity/GOGL\n\n\nOrgAbuseHandle: ABUSE5250-ARIN\nOrgAbuseName:   Abuse\nOrgAbusePhone:  +1-650-253-0000 \nOrgAbuseEmail:  network-abuse@google.com\nOrgAbuseRef:    https://rdap.arin.net/registry/entity/ABUSE5250-ARIN\n\nOrgTechHandle: ZG39-ARIN\nOrgTechName:   Google LLC\nOrgTechPhone:  +1-650-253-0000 \nOrgTechEmail:  arin-contact@google.com\nOrgTechRef:    https://rdap.arin.net/registry/entity/ZG39-ARIN\n\n\n#\n# ARIN WHOIS data and services are subject to the Terms of Use\n# available at: https://www.arin.net/resources/registry/whois/tou/\n#\n# If you see inaccuracies in the results, please report at\n# https://www.arin.net/resources/registry/whois/inaccuracy_reporting/\n#\n# Copyright 1997-2019, American Registry for Internet Numbers, Ltd.\n#\n\n"
+        ]
+    },
+    "http_headers": {
+        "Date": "Tue, 30 Apr 2019 12:34:15 GMT",
+        "Expires": "-1",
+        "Cache-Control": "private, max-age=0",
+        "Content-Type": "text/html; charset=UTF-8",
+        "Strict-Transport-Security": "max-age=31536000",
+        "P3P": "CP=\"This is not a P3P policy! See g.co/p3phelp for more info.\"",
+        "Server": "gws",
+        "X-XSS-Protection": "0",
+        "X-Frame-Options": "SAMEORIGIN",
+        "Set-Cookie": "1P_JAR=2019-04-30-12; expires=Thu, 30-May-2019 12:34:15 GMT; path=/; domain=.google.com",
+        "Alt-Svc": "quic=\":443\"; ma=2592000; v=\"46,44,43,39\"",
+        "Accept-Ranges": "none",
+        "Vary": "Accept-Encoding",
+        "Connection": "close"
+    },
+    "ssl_certificate": {
+        "countryName": "US",
+        "stateOrProvinceName": "California",
+        "localityName": "Mountain View",
+        "organizationName": "Google Trust Services",
+        "commonName": "Google Internet Authority G3"
+    },
+    "desktop": {
+        "title": "Google",
+        "finalurl": "https://www.google.com/?gws_rd=ssl",
+        "useragent": "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36",
+        "screenshot": "6e653cca-e62e-3d87-97b4-e631fbb83e86_d.png"
+    },
+    "mobile": {
+        "title": "Google",
+        "finalurl": "https://www.google.com/?gws_rd=ssl",
+        "useragent": "user-agent=Mozilla/5.0 (Linux; Android 8.0.0; SM-G965F Build/R16NW) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Mobile Safari/537.36",
+        "screenshot": "6e653cca-e62e-3d87-97b4-e631fbb83e86_m.png"
+    }
+}
