@@ -10,8 +10,22 @@ After commencing, I later discovered [Viper](https://github.com/viper-framework/
 ## Install:
 The following _should_ install all requirements:
 ```
-sudo apt-get install python3 pip3 clamav-daemon clamav-freshclam clamav-unofficial-sigs libmagic libmagic-dev openssl openssl-dev libssl-dev zlib
+sudo apt-get install python3 python3-pip automake libtool make gcc magic libssl-dev libmagic-dev clamav-daemon clamav-freshclam clamav-unofficial-sigs exiftool
+curl https://github.com/VirusTotal/yara/archive/v3.8.1.tar.gz
+tar -zxf yara-3.8.1.tar.gz
+cd yara-3.8.1/
+./bootstrap.sh
+./configure --enable-magic
+make
+sudo make install
+make check
+git clone https://github.com/Yara-Rules/rules.git
+pip3 install --upgrade install
 pip3 install requirements.txt
+sudo service clamav-daemon start
+sudo freshclam
+export PATH=/mnt/s/Projects/Malware-Sampler++/app:$PATH
+export FLASK_APP=index.py
 ```
 Please note that this has been developed for python3 exclusively.
 
